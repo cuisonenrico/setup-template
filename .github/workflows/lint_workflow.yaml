@@ -11,6 +11,7 @@ on:
 
 jobs:
   tests:
+    permissions: write-all
     name: Flutter Lint Check
     runs-on: ubuntu-latest
 
