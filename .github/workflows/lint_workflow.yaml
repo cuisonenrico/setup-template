@@ -33,6 +33,17 @@ jobs:
           cache: true
           architecture: x64
 
+      - name: Inject Dummy Environment File
+        uses: "DamianReeves/write-file-action@master"
+        with:
+          path: lib/environment.dart
+          write-mode: overwrite
+          contents: |
+            // ignore_for_file: constant_identifier_names
+            class Environment {
+              static const String key = '';
+            }
+
       - name: Install packages and analyze
         run: |
           flutter pub get
