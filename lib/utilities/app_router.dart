@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:setup/screens/main_page/main_page.dart';
+import 'package:setup/screens/main_page/main_page_connector.dart';
 
 final GlobalKey<NavigatorState> rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'rootNavigatorKey');
 
 final router = GoRouter(
   observers: [routeObservers],
-  initialLocation: MainPage.route,
+  initialLocation: MainPageConnector.route,
   navigatorKey: rootNavigatorKey,
   routes: [
     GoRoute(
-      path: MainPage.route,
-      name: MainPage.routeName,
-      builder: (_, state) => const MainPage(),
+      path: MainPageConnector.route,
+      name: MainPageConnector.routeName,
+      builder: (_, state) => const MainPageConnector(),
       pageBuilder: (context, state) => buildPageWithDefaultTransition<void>(
         context: context,
         state: state,
-        child: const MainPage(),
+        child: const MainPageConnector(),
       ),
       routes: const [],
     ),
