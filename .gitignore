@@ -49,3 +49,5 @@ app.*.map.json
 
 # Environment file
 /lib/environment.dart
+
+android/app/.cxx/**
