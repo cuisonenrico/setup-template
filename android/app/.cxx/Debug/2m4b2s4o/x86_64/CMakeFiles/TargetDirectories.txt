@@ -1,0 +1,2 @@
+C:/Users/Enrico/Documents/My Projects/setup-template/android/app/.cxx/Debug/2m4b2s4o/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/Enrico/Documents/My Projects/setup-template/android/app/.cxx/Debug/2m4b2s4o/x86_64/CMakeFiles/rebuild_cache.dir
